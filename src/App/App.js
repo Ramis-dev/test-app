@@ -13,23 +13,11 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={CompetitionsPage} />
-        <Route
-          exact
-          path="test-app/competitions/:id"
-          component={CompetitionPage}
-        />
-        <Route
-          exact
-          path="test-app/competitions/:id/teams"
-          component={TeamsPage}
-        />
-        <Route exact path="test-app/matches" component={MatchesPage} />
-        <Route exact path="test-app/matches/:id" component={MatchPage} />
-        <Route
-          exact
-          path="test-app/teams/:id/matches"
-          component={TeamMatches}
-        />
+        <Route exact path="/competitions/:id" component={CompetitionPage} />
+        <Route exact path="/competitions/:id/teams" component={TeamsPage} />
+        <Route exact path="/matches" component={MatchesPage} />
+        <Route exact path="/matches/:id" component={MatchPage} />
+        <Route exact path="/teams/:id/matches" component={TeamMatches} />
       </Switch>
     </BrowserRouter>
   );

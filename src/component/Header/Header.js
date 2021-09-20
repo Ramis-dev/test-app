@@ -89,7 +89,7 @@ const Header = () => {
                         state.data.international.map((i) => (
                           <li key={i.id} className={cn(styles.sublistItem)}>
                             <a
-                              href={`test-app/competitions/${i.id}`}
+                              href={`/competitions/${i.id}`}
                               className={styles.sublistItemLink}
                             >
                               {i.name}
@@ -114,7 +114,7 @@ const Header = () => {
               </li>
 
               <li className={styles.navListItem}>
-                <a href="test-app/matches" className={styles.listItemLink}>
+                <a href="/matches" className={styles.listItemLink}>
                   Matches
                 </a>
               </li>
