@@ -10,7 +10,7 @@ import MatchPage from "../component/Pages/MatchPage/MatchPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" component={CompetitionsPage} />
         <Route exact path="/competitions/:id" component={CompetitionPage} />
