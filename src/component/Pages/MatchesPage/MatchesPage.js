@@ -146,7 +146,7 @@ const MatchesPage = ({ history }) => {
                 </RowContain>
               ))
             ) : (
-              <div>В этот день нету матчей</div>
+              <div>No results were found for your search.</div>
             )}
           </div>
         </div>
