@@ -58,7 +58,7 @@ const MatchPage = ({ match }) => {
               </div>
               <div className={styles.competition}>
                 <span>Competition:</span>
-                <a href={`/competitions/${state.data.competition.id}`}>
+                <a href={`test-app/competitions/${state.data.competition.id}`}>
                   {state.data.competition.name}
                 </a>
               </div>
@@ -68,7 +68,7 @@ const MatchPage = ({ match }) => {
                 <Row className={styles.containRow}>
                   <Cell className={styles.linkCell}>
                     <a
-                      href={`/teams/${state.data.homeTeam.id}/matches`}
+                      href={`test-app/teams/${state.data.homeTeam.id}/matches`}
                       className
                     >
                       {state.data.homeTeam.name}
@@ -76,7 +76,9 @@ const MatchPage = ({ match }) => {
                   </Cell>
                   <Cell className={styles.statusCell}>{state.data.status}</Cell>
                   <Cell className={styles.linkCell}>
-                    <a href={`/teams/${state.data.awayTeam.id}/matches`}>
+                    <a
+                      href={`test-app/teams/${state.data.awayTeam.id}/matches`}
+                    >
                       {state.data.awayTeam.name}
                     </a>
                   </Cell>

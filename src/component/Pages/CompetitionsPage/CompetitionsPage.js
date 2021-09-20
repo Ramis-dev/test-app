@@ -29,13 +29,13 @@ const CompetitionsPage = () => {
               <RowContain key={i.id}>
                 <Row>
                   <Cell>
-                    <a key={i.id} href={`/competitions/${i.id}`}>
+                    <a key={i.id} href={`test-app/competitions/${i.id}`}>
                       {i.name}
                     </a>
                   </Cell>
                   <Cell>
                     <a
-                      href={`/competitions/${i.id}/teams`}
+                      href={`test-app/competitions/${i.id}/teams`}
                       className={styles.teamsLink}
                     >
                       Teams
@@ -67,7 +67,7 @@ const CompetitionsPage = () => {
                             <Cell>
                               <a
                                 key={item.id}
-                                href={`/competitions/${item.id}`}
+                                href={`test-app/competitions/${item.id}`}
                               >
                                 {item.name}
                               </a>
@@ -75,7 +75,7 @@ const CompetitionsPage = () => {
                             <Cell>
                               <a
                                 className={styles.teamsLink}
-                                href={`/competitions/${item.id}/teams`}
+                                href={`test-app/competitions/${item.id}/teams`}
                               >
                                 Teams
                               </a>
@@ -98,7 +98,7 @@ const CompetitionsPage = () => {
                         <Cell>
                           <a
                             className={styles.teamsLink}
-                            href={`/competitions/${item.id}/teams`}
+                            href={`test-app/competitions/${item.id}/teams`}
                           >
                             Teams
                           </a>

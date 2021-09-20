@@ -120,7 +120,7 @@ const MatchesPage = ({ history }) => {
               state.data.matches.map((item) => (
                 <RowContain key={item.id}>
                   <a
-                    href={`/matches/${item.id}`}
+                    href={`test-app/matches/${item.id}`}
                     className={styles.containLink}
                   >
                     <Row>
