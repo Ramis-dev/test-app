@@ -18,15 +18,9 @@ export const RowContain = (props) => {
 };
 
 export const Cell = forwardRef((props) => {
-  const { children, className, link } = props;
+  const { children, className } = props;
   const cellCn = cn(styles.cell, {
     [className]: Boolean(className),
   });
-  return link ? (
-    <a a href={link} classNames={cellCn}>
-      {children}
-    </a>
-  ) : (
-    <div className={cellCn}>{children}</div>
-  );
+  return <div className={cellCn}>{children}</div>;
 });
